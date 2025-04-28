@@ -2,10 +2,10 @@ computeMatrix reference-point --referencePoint center \
 -b 4000 -a 4000 \
 -R wt_peaks_final.bed \
 -S wt_sample1_chip.bw wt_sample2_chip.bw \
---skipZeros -o wt1_matrix.gz
+--skipZeros -o wt_matrix.gz
 
-plotProfile -m ./wt1_matrix.gz \
--out ./plot1_wt_replicates2.png \
+plotProfile -m ./wt_matrix.gz \
+-out ./plot1_wt_replicates.png \
 --regionsLabel "" \
 --perGroup \
 --colors red blue \
